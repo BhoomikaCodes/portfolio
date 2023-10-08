@@ -345,7 +345,7 @@ function sendEmail() {
       message => {
         if(message == "OK"){
           swal("Successfull", "Your data successfull received!", "success");
-          email = ""
+          document.getElementById("contactForm").reset();
         }else{
           swal("Something Wrong", "Your data is not received!", "error");
         }
